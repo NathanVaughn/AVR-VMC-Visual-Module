@@ -9,4 +9,4 @@ on:
 
 jobs:
   tests:
-    uses: bellflight/github-actions/.github/workflows/avr_python_tests.yml@main
+    uses: nathanvaughn/AVR-github-actions/.github/workflows/avr_python_tests.yml@main

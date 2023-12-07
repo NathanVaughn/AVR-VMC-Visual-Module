@@ -35,12 +35,12 @@ ENV OPENBLAS_CORETYPE=AARCH64
 WORKDIR /work/
 RUN apt-get update -y
 RUN apt-get install -y tzdata curl ca-certificates
-RUN curl -L -O https://github.com/bellflight/AVR-Python-arm-deb/releases/download/release/libpython3.10-minimal_3.10.11-1+bionic1_arm64.deb \
- && curl -L -O https://github.com/bellflight/AVR-Python-arm-deb/releases/download/release/libpython3.10-stdlib_3.10.11-1+bionic1_arm64.deb \
- && curl -L -O https://github.com/bellflight/AVR-Python-arm-deb/releases/download/release/python3.10-distutils_3.10.11-1+bionic1_all.deb \
- && curl -L -O https://github.com/bellflight/AVR-Python-arm-deb/releases/download/release/python3.10-lib2to3_3.10.11-1+bionic1_all.deb \
- && curl -L -O https://github.com/bellflight/AVR-Python-arm-deb/releases/download/release/python3.10-minimal_3.10.11-1+bionic1_arm64.deb \
- && curl -L -O https://github.com/bellflight/AVR-Python-arm-deb/releases/download/release/python3.10_3.10.11-1+bionic1_arm64.deb
+RUN curl -L -O https://github.com/nathanvaughn/AVR-Python-arm-deb/releases/download/assets/libpython3.10-minimal_3.10.11-1+bionic1_arm64.deb \
+ && curl -L -O https://github.com/nathanvaughn/AVR-Python-arm-deb/releases/download/assets/libpython3.10-stdlib_3.10.11-1+bionic1_arm64.deb \
+ && curl -L -O https://github.com/nathanvaughn/AVR-Python-arm-deb/releases/download/assets/python3.10-distutils_3.10.11-1+bionic1_all.deb \
+ && curl -L -O https://github.com/nathanvaughn/AVR-Python-arm-deb/releases/download/assets/python3.10-lib2to3_3.10.11-1+bionic1_all.deb \
+ && curl -L -O https://github.com/nathanvaughn/AVR-Python-arm-deb/releases/download/assets/python3.10-minimal_3.10.11-1+bionic1_arm64.deb \
+ && curl -L -O https://github.com/nathanvaughn/AVR-Python-arm-deb/releases/download/assets/python3.10_3.10.11-1+bionic1_arm64.deb
 RUN dpkg -i libpython3.10-minimal_3.10.11-1+bionic1_arm64.deb \
  && dpkg -i libpython3.10-stdlib_3.10.11-1+bionic1_arm64.deb \
  && dpkg -i python3.10-lib2to3_3.10.11-1+bionic1_all.deb \

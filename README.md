@@ -1,7 +1,7 @@
 # AVR-VMC-Visual-Module
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Build Visual Module](https://github.com/bellflight/AVR-VMC-Visual-Module/actions/workflows/build.yml/badge.svg)](https://github.com/bellflight/AVR-VMC-Visual-Module/actions/workflows/build.yml)
+[![Build Visual Module](https://github.com/nathanvaughn/AVR-VMC-Visual-Module/actions/workflows/build.yml/badge.svg)](https://github.com/nathanvaughn/AVR-VMC-Visual-Module/actions/workflows/build.yml)
 
 The Visual Inertial Orientation (VIO) module is responsible for capturing data
 from the stereoscopic tracking camera, and converting it into global-ish coordinates.
@@ -36,7 +36,7 @@ poetry self add poetry-pre-commit-plugin
 Now, you can clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/bellflight/AVR-VMC-Visual-Module
+git clone https://github.com/nathanvaughn/AVR-VMC-Visual-Module
 cd AVR-VMC-Visual-Module
 vtr install
 ```
